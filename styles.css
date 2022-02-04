@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.span{
+    color: rgb(83, 34, 77);
+}
+
+nav{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffd2d2d2;
+    padding-left: 10px;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbarbrand{
+    font-size: 3vmax;
+    color: #6666;
+}
+.navbarmenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+#item{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.item-without-height{
+    height: 0px !important;
+    
+}
+
+#item li{
+    list-style-type: none;
+}
+#item li a:hover{
+    color: rgb(1, 29, 95);
+    text-shadow: 4px 3px 3px gray;
+}
+#item li a{
+    color: rgb(98, 98, 102);
+    font-size: 30px;
+    text-decoration: none;
+}
+.iconmenu{
+    font-size: 30px;
+    margin: 0 30px 0 10px;
+    display: none;
+}
+.iconmenu:hover{
+    transition: transform 0.5s;
+    transform:rotate(90deg);
+}
+
+
+@media screen and (max-width:1300px){
+    #item{
+        position: absolute;
+        width: 100%;
+        height: 180px;
+        background-color: rgb(193, 198, 200);
+        top: 70px;
+        left: 0px;
+        transition: height 0.5s;
+        display: block;
+        overflow: hidden;
+    }
+   
+    .navbarmenu ul li{
+        display: block;
+        margin-left: 200px;
+        padding: 5px;
+    }
+    .navbarmenu ul li a{
+        color: white;
+    }
+    .iconmenu{
+        display: block;
+    }
+}
+
+.container{
+    width: 80%;
+    margin: 0px auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
